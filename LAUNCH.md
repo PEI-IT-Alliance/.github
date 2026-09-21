@@ -29,6 +29,7 @@
 - [ ] Delete the local key files.
 
 ## 6. After launch
-- [ ] Ship `/feed.json` on the website (see `docs/feed-spec.md`). Until then, the README shows friendly fallback links.
+- [ ] Ship `/feed.json` on the website for news (see `docs/feed-spec.md`). Events already come
+      from `/api/events`. Until the feed exists, the News section shows a friendly fallback link.
 - [ ] Measure: in site analytics, filter `utm_source=github` for event signups. Track org followers monthly.
 - [ ] Announce on LinkedIn and in Slack.
