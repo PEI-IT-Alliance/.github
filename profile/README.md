@@ -90,7 +90,9 @@
 ## 📰 From the Alliance
 
 <!-- NEWS:START -->
-Catch up on community news at [peiitalliance.com/news](https://www.peiitalliance.com/news?utm_source=github&utm_medium=org_profile&utm_campaign=readme).
+- [Meet Vivian Beer, on a multi-faceted AI journey](https://peiitalliance.com/news/meet-vivian-beer?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Sep 21
+- [The Foundry: PEI's New Hub for Tech Innovation](https://peiitalliance.com/news/the-foundry-peis-new-hub-for-tech-innovation?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Feb 20, 2025
+- [Meet Marianne Rodgers, leader of research at the Wind Energy Institute of Canada, helping power the country with more renewable energy](https://peiitalliance.com/news/meet-marianne-rodgers-leader-of-research-at-the-wind-energy-institute-of-canada-helping-power-the-country-with-more-renewable-energy?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Mar 8, 2023
 <!-- NEWS:END -->
 
 ## 🧭 Thinking about PEI?

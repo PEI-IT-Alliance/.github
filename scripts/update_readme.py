@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Refresh the Next up and From the Alliance blocks in profile/README.md.
 
-Events come from the PEI IT Alliance events API. News comes from the site's
-JSON feed. Standard library only.
+Events and news both come from the PEI IT Alliance site API. Standard
+library only.
 
 Falls back to a friendly link if either source is missing or empty, so the
 README never shows an error or a blank section.
@@ -17,7 +17,7 @@ from urllib.parse import urlencode, urlparse, urlunparse, parse_qsl
 from zoneinfo import ZoneInfo
 
 EVENTS_URL = os.environ.get("EVENTS_URL", "https://www.peiitalliance.com/api/events")
-FEED_URL = os.environ.get("FEED_URL", "https://www.peiitalliance.com/feed.json")
+NEWS_URL = os.environ.get("NEWS_URL", "https://www.peiitalliance.com/api/news")
 README = os.environ.get("README_PATH", "profile/README.md")
 TZ = ZoneInfo("America/Halifax")
 UTM = {"utm_source": "github", "utm_medium": "org_profile", "utm_campaign": "readme"}
@@ -82,7 +82,12 @@ def fetch_events():
 
 
 def fetch_news():
-    return fetch_json(FEED_URL).get("items", [])
+    """The news API returns {"articles": [...]}, newest first."""
+    payload = fetch_json(NEWS_URL)
+    if isinstance(payload, list):
+        return payload
+    articles = payload.get("articles")
+    return articles if isinstance(articles, list) else []
 
 
 def render_events(items, now):
@@ -111,22 +116,29 @@ def render_events(items, now):
     return "\n".join(lines)
 
 
-def render_news(items):
+def render_news(items, now):
     news = []
     for item in items:
-        if "news" not in item.get("tags", []):
+        published = parse_dt(item.get("publishedAt"))
+        title = (item.get("title") or "").strip()
+        url = item.get("url")
+        if not (published and title and url):
             continue
-        published = parse_dt(item.get("date_published"))
-        if published:
-            news.append((published, item))
+        news.append((published, title, url))
     news.sort(key=lambda n: n[0], reverse=True)
     if not news:
         return NEWS_FALLBACK
-    lines = [
-        f"- [{md_escape(item['title'])}]({with_utm(item['url'])}) · "
-        f"{published.astimezone(TZ).strftime('%b %-d')}"
-        for published, item in news[:MAX_NEWS]
-    ]
+    lines = []
+    for published, title, url in news[:MAX_NEWS]:
+        # Published dates are stamped at midnight UTC. Converting them to
+        # Halifax time would roll each one back a day, so read them as given.
+        # Older pieces need the year, or February 2023 reads as this February.
+        when = (
+            published.strftime("%b %-d")
+            if published.year == now.year
+            else published.strftime("%b %-d, %Y")
+        )
+        lines.append(f"- [{md_escape(title)}]({with_utm(url)}) · {when}")
     return "\n".join(lines)
 
 
@@ -148,15 +160,15 @@ def main():
 
     try:
         news = fetch_news()
-    except Exception as err:  # feed not live yet
-        print(f"Feed unavailable ({err}). Using fallback text.")
+    except Exception as err:  # network blip, bad JSON, API down
+        print(f"News unavailable ({err}). Using fallback text.")
         news = []
 
     with open(README, encoding="utf-8") as f:
         original = f.read()
 
     updated = replace_block(original, "EVENTS", render_events(events, now))
-    updated = replace_block(updated, "NEWS", render_news(news))
+    updated = replace_block(updated, "NEWS", render_news(news, now))
 
     if updated == original:
         print("No changes.")
