@@ -9,6 +9,7 @@ Org-wide defaults and the public profile for [PEI IT Alliance](https://www.peiit
 | `scripts/update_readme.py` | Pulls events and news from the site API |
 | `.github/workflows/update-readme.yml` | Runs the script daily |
 | `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `SECURITY.md`, `SUPPORT.md`, `.github/ISSUE_TEMPLATE/` | Defaults every org repo inherits unless it has its own |
+| `docs/how-it-works.md` | How the page is built, rebuilt, and edited |
 | `docs/content-sources.md` | The two API endpoints the script reads, and what it reads from each |
 | `LAUNCH.md` | Go-live checklist |
 
