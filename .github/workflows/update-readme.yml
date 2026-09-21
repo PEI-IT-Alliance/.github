@@ -1,0 +1,47 @@
+name: Refresh profile README
+
+on:
+  schedule:
+    - cron: "0 10 * * *"   # daily, 6 or 7 AM Atlantic
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_readme.py
+      - .github/workflows/update-readme.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-readme
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Deploy key lets the bot bypass the main branch ruleset.
+          # Until the secret exists, checkout falls back to GITHUB_TOKEN.
+          ssh-key: ${{ secrets.PROFILE_DEPLOY_KEY }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update README blocks
+        run: python scripts/update_readme.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git config user.name "pei-it-alliance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/README.md
+          git commit -m "chore: refresh events and news"
+          git push

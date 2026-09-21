@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Say hello to the Alliance
+    url: https://www.peiitalliance.com/connect
+    about: Questions about programs, events, or membership.
+  - name: Email us
+    url: mailto:hello@peiitalliance.com
+    about: A real person reads every message.

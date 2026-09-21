@@ -1,0 +1,14 @@
+name: Idea or suggestion
+description: Share an idea for a project, program, or tool.
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who does this help?
