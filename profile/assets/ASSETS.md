@@ -1,22 +1,30 @@
 # Assets
 
-| File | Status | Notes |
-|---|---|---|
-| `hero.png` | In place | Homepage hero, 1280 px wide, 194 KB. Pulled with `scripts/fetch-assets.sh` and resized. |
-| `logos/pei-devs.png` | In place | Teal wordmark on a transparent background, trimmed to 716x119. |
-| `logos/the-foundry.svg` | Missing | |
-| `logos/foundry-residency.svg` | Missing | |
-| `logos/the-night-shift.svg` | Missing | |
-| `logos/ai-together.svg` | Missing | |
-| `logos/tech-week-pei.svg` | Missing | |
+| File | Notes |
+|---|---|
+| `hero.png` | Homepage hero, 1280 px wide, 194 KB. Pulled with `scripts/fetch-assets.sh` and resized. |
+| `cards/*.png` | Program card images. Screenshots of each program page, 800x250, about 30 KB each. |
+| `logos/pei-devs.png` | The PEI Devs wordmark, teal on a transparent background. Not currently used in the README. |
 
-The five missing logos do not exist anywhere yet. The website brands those programs
-typographically, with a letterspaced eyebrow and a display serif headline, so there is
-nothing to download. Their cards in `profile/README.md` currently show the program name
-as a heading and no image. Add the `<img>` tag back to a card once its logo exists.
+## Program cards
 
-Check every logo on GitHub's dark theme. A dark logo on a transparent background
-disappears. Add a white stroke or a light variant if needed.
+The programs have no logo files. The website brands them typographically, with a
+letterspaced eyebrow and a display serif headline, so each card in `profile/README.md`
+uses a screenshot of the program's own page instead.
 
-Using PNG instead of SVG? Keep the same name with `.png` and update the path in
-`profile/README.md`.
+| Card | Source page |
+|---|---|
+| `cards/the-foundry.png` | https://www.peiitalliance.com/the-foundry |
+| `cards/foundry-residency.png` | https://www.peiitalliance.com/the-foundry/residency |
+| `cards/the-night-shift.png` | https://www.peiitalliance.com/the-night-shift |
+| `cards/ai-together.png` | https://www.peiitalliance.com/ai-together |
+| `cards/tech-week-pei.png` | https://www.peiitalliance.com/tech-week |
+| `cards/pei-devs.png` | https://www.peiitalliance.com/pei-devs |
+
+To refresh one: open the page at 1280x800, screenshot the hero, crop to a 3.2:1 box
+around the wordmark, resize to 800x250, and run it through `pngquant --quality 60-88`.
+Keep each card under about 50 KB.
+
+Cards carry their own background, so they read on both GitHub themes. A logo on a
+transparent background does not. Check every transparent asset against the dark theme
+before shipping it.

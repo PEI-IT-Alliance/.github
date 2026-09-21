@@ -38,11 +38,13 @@ We're lining up the next few events. See the full calendar at [peiitalliance.com
 <table>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://www.peiitalliance.com/the-foundry?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/cards/the-foundry.png" alt="The Foundry: where PEI's tech community works and grows" width="100%"></a>
       <h3>The Foundry</h3>
       Our downtown Charlottetown coworking space. A desk, good coffee, and your people down the hall.<br><br>
       <a href="https://www.peiitalliance.com/the-foundry?utm_source=github&utm_medium=org_profile&utm_campaign=readme">Visit The Foundry →</a>
     </td>
     <td width="50%" valign="top">
+      <a href="https://www.peiitalliance.com/the-foundry/residency?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/cards/foundry-residency.png" alt="The Foundry Residency Program" width="100%"></a>
       <h3>The Foundry Residency</h3>
       90-day cycles for export-focused PEI startups. Coaching, mentors, and real access to investors.<br><br>
       <a href="https://www.peiitalliance.com/the-foundry/residency?utm_source=github&utm_medium=org_profile&utm_campaign=readme">See the residency →</a>
@@ -50,11 +52,13 @@ We're lining up the next few events. See the full calendar at [peiitalliance.com
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://www.peiitalliance.com/the-night-shift?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/cards/the-night-shift.png" alt="The Night Shift: build your dream after dark" width="100%"></a>
       <h3>The Night Shift</h3>
       Weekly after-hours coworking for side projects. Bring a goal, leave with progress.<br><br>
       <a href="https://www.peiitalliance.com/the-night-shift?utm_source=github&utm_medium=org_profile&utm_campaign=readme">Join The Night Shift →</a>
     </td>
     <td width="50%" valign="top">
+      <a href="https://www.peiitalliance.com/ai-together?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/cards/ai-together.png" alt="AI Together, a PEI IT Alliance program" width="100%"></a>
       <h3>AI Together</h3>
       Learn to build with AI, side by side with other Islanders. Every week, all skill levels.<br><br>
       <a href="https://www.peiitalliance.com/ai-together?utm_source=github&utm_medium=org_profile&utm_campaign=readme">Learn more →</a>
@@ -62,12 +66,13 @@ We're lining up the next few events. See the full calendar at [peiitalliance.com
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://www.peiitalliance.com/tech-week?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/cards/tech-week-pei.png" alt="Tech Week PEI: a week to meet your people in PEI tech" width="100%"></a>
       <h3>Tech Week PEI</h3>
       The Island's biggest week for tech. Talks, meetups, and a whole lot of new connections.<br><br>
       <a href="https://www.peiitalliance.com/tech-week?utm_source=github&utm_medium=org_profile&utm_campaign=readme">See Tech Week →</a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://www.peiitalliance.com/pei-devs?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/logos/pei-devs.png" alt="PEI Devs logo" height="56"></a>
+      <a href="https://www.peiitalliance.com/pei-devs?utm_source=github&utm_medium=org_profile&utm_campaign=readme"><img src="https://raw.githubusercontent.com/PEI-IT-Alliance/.github/main/profile/assets/cards/pei-devs.png" alt="PEI Devs, the Island's developer community since 2012" width="100%"></a>
       <h3>PEI Devs</h3>
       Developers helping developers level up. Talks, code, and friendly faces.<br><br>
       <a href="https://www.peiitalliance.com/pei-devs?utm_source=github&utm_medium=org_profile&utm_campaign=readme">Meet PEI Devs →</a>
