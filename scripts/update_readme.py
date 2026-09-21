@@ -22,6 +22,7 @@ README = os.environ.get("README_PATH", "profile/README.md")
 TZ = ZoneInfo("America/Halifax")
 UTM = {"utm_source": "github", "utm_medium": "org_profile", "utm_campaign": "readme"}
 SITE_HOSTS = {"peiitalliance.com", "www.peiitalliance.com"}
+SITE_HOST = "www.peiitalliance.com"
 MAX_EVENTS = 3
 MAX_NEWS = 3
 
@@ -38,13 +39,17 @@ NEWS_FALLBACK = (
 
 
 def with_utm(url):
-    """Tag our own links so the site can attribute them. Leave other hosts alone."""
+    """Tag our own links so the site can attribute them. Leave other hosts alone.
+
+    The APIs return bare peiitalliance.com links. The profile uses the www
+    subdomain throughout, so normalise them and skip a redirect.
+    """
     parts = urlparse(url)
     if parts.netloc.lower() not in SITE_HOSTS:
         return url
     query = dict(parse_qsl(parts.query))
     query.update(UTM)
-    return urlunparse(parts._replace(query=urlencode(query)))
+    return urlunparse(parts._replace(netloc=SITE_HOST, query=urlencode(query)))
 
 
 def parse_dt(value):
