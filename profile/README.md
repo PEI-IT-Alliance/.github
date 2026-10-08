@@ -30,12 +30,12 @@
 ## 📅 Next up
 
 <!-- EVENTS:START -->
-- **[AI Together](https://locarius.io/events/5094/ai-together)**  
-  Wed, Oct 7 · 3 PM
 - **[The Night Shift (Thursday Edition)](https://locarius.io/events/4826/the-night-shift-thursday-edition)**  
   Thu, Oct 8 · 6 PM
 - **[The Night Shift (Tuesday Edition)](https://locarius.io/events/4835/the-night-shift-tuesday-edition)**  
   Tue, Oct 13 · 6 PM
+- **[AI Together](https://locarius.io/events/5097/ai-together)**  
+  Wed, Oct 14 · 3 PM
 
 [See all events →](https://www.peiitalliance.com/events?utm_source=github&utm_medium=org_profile&utm_campaign=readme)
 <!-- EVENTS:END -->
