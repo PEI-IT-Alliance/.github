@@ -30,12 +30,12 @@
 ## 📅 Next up
 
 <!-- EVENTS:START -->
-- **[UPEI Student & Industry Tech Mixer](https://locarius.io/events/5193/upei-student-industry-tech-mixer)**  
-  Mon, Nov 2 · 4 PM
 - **[The Night Shift (Tuesday Edition)](https://locarius.io/events/5104/the-night-shift-tuesday-edition)**  
-  Tue, Nov 3 · 5 PM
+  Tue, Nov 3 · 6 PM
 - **[AI Together](https://locarius.io/events/5195/ai-together)**  
-  Wed, Nov 4 · 2 PM
+  Wed, Nov 4 · 3 PM
+- **[The Night Shift (Thursday Edition)](https://locarius.io/events/5110/the-night-shift-thursday-edition)**  
+  Thu, Nov 5 · 6 PM
 
 [See all events →](https://www.peiitalliance.com/events?utm_source=github&utm_medium=org_profile&utm_campaign=readme)
 <!-- EVENTS:END -->
