@@ -30,12 +30,12 @@
 ## 📅 Next up
 
 <!-- EVENTS:START -->
-- **[The Night Shift (Thursday Edition)](https://locarius.io/events/5111/the-night-shift-thursday-edition)**  
-  Thu, Nov 12 · 5 PM
 - **[AI Together](https://locarius.io/events/5197/ai-together)**  
   Tue, Nov 17 · 3 PM
 - **[The Night Shift (Tuesday Edition)](https://locarius.io/events/5106/the-night-shift-tuesday-edition)**  
-  Tue, Nov 17 · 5 PM
+  Tue, Nov 17 · 6 PM
+- **[ATS 2026: Secure Velocity - Official PEI Watch Party](https://locarius.io/events/5240/ats-2026-secure-velocity-official-pei-watch-party)**  
+  Wed, Nov 18 · 8 AM
 
 [See all events →](https://www.peiitalliance.com/events?utm_source=github&utm_medium=org_profile&utm_campaign=readme)
 <!-- EVENTS:END -->
