@@ -30,12 +30,12 @@
 ## 📅 Next up
 
 <!-- EVENTS:START -->
-- **[AI Together](https://locarius.io/events/5197/ai-together)**  
-  Tue, Nov 17 · 3 PM
-- **[The Night Shift (Tuesday Edition)](https://locarius.io/events/5106/the-night-shift-tuesday-edition)**  
-  Tue, Nov 17 · 6 PM
-- **[ATS 2026: Secure Velocity - Official PEI Watch Party](https://locarius.io/events/5240/ats-2026-secure-velocity-official-pei-watch-party)**  
-  Wed, Nov 18 · 8 AM
+- **[The Night Shift (Thursday Edition)](https://locarius.io/events/5112/the-night-shift-thursday-edition)**  
+  Thu, Nov 19 · 6 PM
+- **[The Night Shift (Tuesday Edition)](https://locarius.io/events/5107/the-night-shift-tuesday-edition)**  
+  Tue, Nov 24 · 6 PM
+- **[AI Together](https://locarius.io/events/5198/ai-together)**  
+  Wed, Nov 25 · 3 PM
 
 [See all events →](https://www.peiitalliance.com/events?utm_source=github&utm_medium=org_profile&utm_campaign=readme)
 <!-- EVENTS:END -->
@@ -90,9 +90,9 @@
 ## 📰 From the Alliance
 
 <!-- NEWS:START -->
+- [Meet Kerry Loughlin, connecting Veterinary Expertise to the World from PEI](https://www.peiitalliance.com/news/meet-kerry-loughlin?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Nov 17
 - [Meet Terry Smith, building with AI and finding lost treasures](https://www.peiitalliance.com/news/meet-terry-smith?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Oct 13
 - [Meet Vivian Beer, on a multi-faceted AI journey](https://www.peiitalliance.com/news/meet-vivian-beer?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Sep 21
-- [The Foundry: PEI's New Hub for Tech Innovation](https://www.peiitalliance.com/news/the-foundry-peis-new-hub-for-tech-innovation?utm_source=github&utm_medium=org_profile&utm_campaign=readme) · Feb 20, 2025
 <!-- NEWS:END -->
 
 ## 🧭 Thinking about PEI?
